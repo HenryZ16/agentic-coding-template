@@ -9,3 +9,4 @@ description: 代码功能维护规范
   - 代码文件：列出修改内容中的主要代码文件，并简要说明它们的作用
 - 在完成开发以后，对于你修改的内容，请生成 API 文档。
   - 对于 Python 代码，请遵循 sphinx-apidoc 的规范，编写 docstring 来描述它们的功能、输入输出等信息。然后，调用 `sphinx-apidoc src -o docs` 来更新文档
+  - 对于 Rust 代码，请使用 rustdoc 的工具链
