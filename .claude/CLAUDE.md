@@ -9,10 +9,14 @@ TODO: 告诉 Agent 这个项目是做什么的
 - caveman
 - karpathy-guidelines
 
+当用户要求新增、修改、删除功能时，请进入 plan mode，并参照 `.claude/rules/function-maintaining.md` 的规则执行
+- 这意味着，当用户要求简化代码、代码调优等不涉及功能改动时，无需进入 plan mode
+
 ## 维护规范
 除非用户明确要求，不得更改以下内容：
 - `.claude` 中的所有内容
 - 项目根目录中的 `README.md`
+需要了解项目 API 时，请先阅读在 `docs` 中，由文档生成工具自动生成的 API 文档
 
 项目的每一层目录，应当遵循以下规范：
 - 提供一个 `CLAUDE.md`
@@ -26,6 +30,7 @@ TODO: 如果有本地代码环境需要加载，例如 Python 的 `.venv`，请�
 ## 目录介绍
 本条目仅介绍项目根目录下的所有目录：
 - `src`: 存放代码源文件
+- `docs`: API 文档
 
 ## 注意事项
 TODO: 设置一些 Top level 的规则
